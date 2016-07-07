@@ -70,7 +70,7 @@ function buildScript(file, watch) {
     debug : true,
     cache: {},
     packageCache: {},
-    transform:  [babelify.configure({stage : 0 })]
+    transform:  [babelify.configure({stage : 0 })] //Configuration for ES Versions
   };
 
   // watchify() if watch requested, otherwise run browserify() once 
