@@ -8,9 +8,12 @@ import Firebase from 'firebase'
 var config = {
 	apiKey : 'AIzaSyCh_mIM5dpY9t-mjG_XVXKaQzil1yEwmv0',
 	authDomain : 'reactlearning-a5b09.firebaseapp.com',
-	databaseURL : 'https://reactlearning-a5b09.firebaseio.com/'
+	databaseURL : 'https://reactlearning-a5b09.firebaseio.com/',
+	serviceAccount : '../ReactLearning-da3d48a10621.json'
 }
 var app = Firebase.initializeApp(config);
+var database = app.database();
+var Promise = require("bluebird");
 /*
 	Inventory
 	<Inventory/>
@@ -27,13 +30,55 @@ class Inventory extends React.Component {
     }
 
     authenticate(provider) {
+
+    	var classRef = this;
     	app.auth().signInWithPopup(provider).then(function(result){
-    		console.log('Success: ', result);
-    		console.log(this.props.params.storeId);
+    		//console.log(result.credential.accessToken);
+    		//Save the login token in the browser
+    		//var customToken = app.auth().createCustomToken(result.user.uid);
+    		//console.log(customToken);
+    		//localStorage.setItem('token', app.auth().createCustomToken(result.user.uid));
+
+    		const storeRef = database.ref(classRef.props.params.storeId);
+    		storeRef.on('value', (snapshot)=> {
+    			var data = snapshot.val() || {};
+
+    			//Claim it if no owner has been attached
+    			if (!data.owner) {
+    				storeRef.set({
+    					owner : result.user.uid
+    				})
+    			}
+
+    			//Update our state to reflect the current store owner and user
+    			classRef.setState({
+    				uid : result.user.uid,
+    				owner : data.owner || result.user.uid
+    			});
+    		});
     	})
     	.catch(function(error){
     		console.log('Error: ', error);
     		return
+    	})
+    }
+
+    componentWillMount() {
+    	console.log('Checking to see if we can log them in');
+    	var token = localStorage.getItem('token');
+
+    	if (token) {
+    		app.auth().signInWithCustomToken(token).then(function(result){
+    			console.log(result);
+    		})
+    	}
+    }
+
+    logout() {
+
+    	localStorage.removeItem('token');
+    	this.setState({
+    		uid : null
     	})
     }
 
@@ -80,7 +125,7 @@ class Inventory extends React.Component {
 
     render() {
 
-    	let logoutButton = <button>Log Out!</button>
+    	let logoutButton = <button onClick={this.logout}>Log Out!</button>
 
     	//Check If they're logged In
     	if (!this.state.uid) {

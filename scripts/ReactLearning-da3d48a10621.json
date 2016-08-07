@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "reactlearning-a5b09",
+  "private_key_id": "da3d48a10621fa132401dbb04a0879d45db560e9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYwdKOW4gwF1ll\nHqJC0QLJeVXoLxhknePZTRpqKXYX4iNI4aHtXrx7oyVajiKHhDplzMeo00phOX49\nyCEiNXqxjQOMluHdX/Bu+Oj8gjLLDiwnOHxhBY6ycsmqoUq9CQemu7cCAtUVbRTT\n7pqsVapXs7KbSnOlmSIaROH2aeg4Gd6ey3vQFL0QS2pqkgDWZJ/UG3jFUzB8fCmm\nbud+GOMlq/4Z4manzqLKGhfRhiJaWgzRG4KMmMtJBRJy4LwghIhq2uvDrTw3Os0M\nZwWom1yb9mxsanFFXdeEpwgILumwI9jIhLm8ErT5+A7SyQjCZBqFkdP8joz0WPzN\n6DTzJBDdAgMBAAECggEAGH2Cj1Y3aFZl+6NEqmeuBbURQ89BHuh9XhpRcNHC4CNe\nOtIJzu+QUlYep/z/pjBZ2HZTUErHsvyvs6IBReXDDPIproGGJqK5/mCjodAR6qIU\nDBmvPzLP5OYoVNXVEKeA9YdE2OqxVOUPIMcxPw3g6Hyj1ufB0LvTTtjaTVI/a7bi\ndKUJ1mTyWoZJxjrpRQb3eFgp/PpxWVQBPbJxtqOWisuWIu9mNdC96HqqOliDBPwh\nTFvPHPDwO+ESKIlQ2cuF31sepF099t2CHx7dCp/nI7sXAksglHYNvcrF6ndI19rx\n4RBYealayXEvgPAvqL7ZNZU4Ic6lOxBWG/zmJAgbQQKBgQDVhi809EIvjzWr2kD9\nQzgNHPH//J0OYAD+C+58jTKcY7YSrpmKD1Zt8F/S5XgNttqXWgY0Uvot6dr8i/Gd\nwzsLXCRa9gV798IGqM4E55A/Gv5ttyHakQWytSoQIf4u5gBYNf1wq2ZbUZrd+dKS\nJpDSuJpAqOZwkYuUnhx60l3x0QKBgQC3JQx9KDYKPXUNRgMCponOAvgywaKb8Lzk\nd0DpzlfPwEa9L7+i2JMDrVhzufeuOMCgpuJY855XqzMAiza3kSaCRkPO0vg4N5co\nd08gDQORZCn/Z8at3Gioeyx5dwJhZF9ZMuQ5QJQScc/ms+MgptNnRPPtf/tERy7v\nR/ckT6VFTQKBgQCFzWxPlrDS9L8BTedjzXeWYAkWDMquc2Krz/ZGfoS0k5dI5bi5\nVxsmEXc6xSkSDv+z0GoK5+R2WREtKNTjs6+QUtFFXt3Y7Uzct3NCh4lQwi2luxiv\nyijz76rIKUULRn34yPxkWkPt/Zk6eI6HnzspkRy4YB7nc40wOFRIcwMDwQKBgGrB\no+gI2odZj7OvDe4rmcSGopsjmGACEnmyshoX98PYNuPsw25vhDLuhtLeomviFRcQ\ncHyddb1wxAgbHkgeyi3CO6CCBcLvVKN3+J2cOGo10u1YVs3d3vvm4OPk5XRUB+h8\n6+AbrrSZtzCpx0mvNSfLX80ffx4ryEYe0wdNje85AoGBAMMO/0Tssqr91SZTBpc4\njlUPLFppz+zu8u5pay8V5cCRKtl88M9uMwYnFYz7/5jIGFehoOOeGA747ka4+LLf\nwR4lvJxb21V2Pykp/aYzLj3N2aEJTuY2WDRwlXpz7vGI0ZpmcRjDC21GY1JebFm+\nvkamPHcok3hzJs/tNgDvubWN\n-----END PRIVATE KEY-----\n",
+  "client_email": "reactlearningserviceaccount@reactlearning-a5b09.iam.gserviceaccount.com",
+  "client_id": "102914541286583893769",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/reactlearningserviceaccount%40reactlearning-a5b09.iam.gserviceaccount.com"
+}
